@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <script src="cal.js"></script>
+    <link rel="stylesheet" href="cal.css">
+
+    
+    
+</head>
+<body>
+    <div class="body">
+        <article class="sub-body">
+            <h2 class="name">Standard Calculator</h2>
+            <div class="props">
+                <section class="view">
+                    <h3  id="exp" >0</h3>
+                    
+                    <h2 class="result"id="ans">0</h2>
+                </section>
+
+                <section class="keys">
+
+                    <button class="d" style="width: 90px;"onclick="document.getElementById('exp').innerHTML = keys.remove()"><h2>del</h2></button>
+
+                    <button class="clear" type="button" onclick="document.getElementById('exp').innerHTML = keys.clear()" ondblclick="document.getElementById('ans').innerHTML = keys.clear()">
+                        <h1>clear</h1>
+                    </button>
+                    
+                    <button class="r" style="width: 90px; "onclick="document.getElementById('ans').innerHTML = keys.equals()"><h1>=</h1></button>
+
+                    <button class="ops" onclick="document.getElementById('ans').innerHTML = keys.sqr()"><h2>x<sup>2</sup></h2></button>
+
+                    <button class="ops" onclick="document.getElementById('ans').innerHTML = keys.sqrt()"><h2>sqrt</h2></button>
+
+                    <button class="ops" onclick="document.getElementById('ans').innerHTML = keys.round()"><h2>rnd</h2></button>
+
+                    <button class="ops" onclick="document.getElementById('ans').innerHTML = keys.exp()"><h2>exp</h2></button>
+
+                    <button class="key-one" onclick="document.getElementById('exp').innerHTML = keys.one()"><h2>1</h2></button>
+
+                    <button class="key-two" onclick="document.getElementById('exp').innerHTML = keys.two()"><h2>2</h2></button>
+
+                    <button class="key-three" onclick="document.getElementById('exp').innerHTML = keys.three()"><h2>3</h2></button>
+
+                    <button class="key-four" onclick="document.getElementById('exp').innerHTML = keys.four()"><h2>4</h2></button>
+
+                    <button class="key-five" onclick="document.getElementById('exp').innerHTML = keys.five()"><h2>5</h2></button>
+
+                    <button class="key-six" onclick="document.getElementById('exp').innerHTML = keys.six()"><h2>6</h2></button>
+
+                    <button class="key-seven" onclick="document.getElementById('exp').innerHTML = keys.seven()" value="7"><h2>7</h2></button>
+
+                    <button class="key-eight" onclick="document.getElementById('exp').innerHTML=keys.eight()"><h2>8</h2></button>
+
+                    <button class="key-nine" onclick="document.getElementById('exp').innerHTML = keys.nine()"><h2>9</h2></button>
+                    
+                    <button class="b" onclick="document.getElementById('exp').innerHTML = keys.plus()"><h2>+</h2></button>
+
+
+                    <button class="key-zero" onclick="document.getElementById('exp').innerHTML = keys.zero()"><h2>0</h2></button>
+
+                    <button class="b" onclick="document.getElementById('exp').innerHTML = keys.minus()"><h2>-</h2></button>
+
+                    <button class="b" onclick="document.getElementById('exp').innerHTML = keys.multiplication()"><h2>x</h2></button>
+
+                    <button class="b"  onclick="document.getElementById('exp').innerHTML = keys.point()"><h2>.</h2></button>
+                    
+                    <button class="b" onclick="document.getElementById('exp').innerHTML = keys.divide()"><h2>/</h2></button>
+
+
+                </section>
+            </div>
+        </article>
+    </div>
+
+    
+</body>
+</html>
